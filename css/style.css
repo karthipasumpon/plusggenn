@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  src: url("../fonts/Roboto-Light.ttf") format("woff2");
+  font-family: "RobotoLight";
+}
+
+@font-face {
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-family: "RobotoMedium";
+}
+
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: "RobotoRegular";
+}
+
+body {
+  font-family: "RobotoRegular";
+}
+
+.heading {
+  font-size: 52px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 1170px;
+  border: 2px solid red;
+  margin: 40px auto;
+}
+
+.edgeparent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.edgelist {
+  display: flex;
+  flex-basis: 48%;
+  margin-bottom: 25px;
+}
+
+.edgelist::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.listleft {
+  margin-right: 20px;
+}
+
+.listleft i {
+  font-size: 32px;
+  color: blue;
+}
